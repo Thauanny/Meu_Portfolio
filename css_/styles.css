@@ -1,0 +1,767 @@
+/*SITE DESENVOLVIDO POR: THAUANNY RAMOS PEREIRA */
+
+
+/*======== 
+  GERAL 
+=========*/
+
+body, p, h1, h2, input, textarea{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+
+
+}
+
+h2{
+    font-size: 30px;
+}
+
+/*======== 
+  Navbar
+=========*/
+
+#navbar{
+    background-color: #6D214F;
+    color:            #f5f6fa;
+    padding:          0 15px;
+    height:           60px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    overflow: hidden;
+    z-index: 50;
+
+
+}
+
+#navbar h2, #navbar ul, .navbar-list li, #navbar nav{
+
+    display: inline-block;   
+         
+}
+
+#navbar h2{
+
+    margin:      0;
+    line-height: 60px;
+    margin-left: 20px;
+    font-size:   15px;
+
+}
+
+#navbar nav{
+
+    float: right;
+    margin-top: -25px;
+    margin-right: 100px;
+
+
+}
+
+.navbar-list li{
+    margin: 0 5px;
+
+}
+
+.navbar-list li img{
+
+    height: 40px;
+
+}
+
+.navbar-list .git{
+    
+    position: absolute;
+
+}
+
+.navbar-list .twt{
+
+    position: absolute;
+
+}
+
+.navbar-list .insta{
+
+    position: absolute;
+}
+
+
+.navbar-list .git:hover{
+
+    height: 35px;
+
+} 
+
+.navbar-list .insta:hover{
+
+    height: 35px;
+    
+} 
+
+
+.navbar-list .twt:hover{
+    
+    height: 35px;
+    
+} 
+
+
+/*======== 
+  Banner
+=========*/
+
+#main-banner{
+    height:           70vh;
+    background-image: url("../img_/bg-projeto.jpg");
+    background-size:  cover;
+    padding-top:      15vh;
+    width: 100%;
+ 
+}   
+
+.banner-info{
+
+    width:        40%;
+    margin-right: auto;
+    margin-left:  auto;
+    text-align:   center;
+    color:      #f5f6fa;
+    padding:      50px;
+    margin-top: -20px;
+   
+}
+
+.banner-info span{
+
+    text-align: center;
+    padding-top: 20px;
+    position: relative;
+    margin-top: 30px;
+
+}
+
+.banner-info img{
+
+    height:300px;
+    border-radius: 50%;
+    margin-top: -50px;
+    position: absolute;
+    top: 37%;
+    left: 41%;
+}
+
+
+/*======== 
+  About
+=========*/
+#sobre-section{
+    text-align: center;
+    background-color: #6D214F;
+    color: #f5f6fa;
+    padding-top: 50px;
+    height: 350px;
+}
+
+#sobre-section h2{
+    margin-bottom: 20px;
+    margin-top:25px;
+}
+
+#sobre-section p{
+
+    word-wrap: break-word;
+    max-width: 650px;
+    margin-right: auto;
+    margin-left: auto;
+    line-height: 30px;
+}
+
+/*======== 
+ Conhecimentos
+=========*/
+
+#skills-section{
+    margin-top: -100px;
+    background-color: #f5f6fa;
+    width: 80%;
+    margin-right: auto;
+    margin-left: auto;
+    border: 2px solid #f1f2f6;
+    border-radius: 10px;
+    position: relative;
+}
+
+#skills-section .container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.skills-container{
+    flex: 1 1;
+    text-align: center;
+    padding: 60px 25px;
+    
+}
+
+.primeiro{
+    border-right: 1px solid #ccc;
+}
+
+.skills-container h3{
+    color: #6D214F;
+    font-size: 20px;;
+}
+
+.skills-container img{
+    height: 60px;
+    border: 10px solid transparent;
+    border-radius: 40%;
+    background-color: #6D214F;
+    margin-top: 25px;
+    
+
+}
+
+.skills-container .subtitle{
+    font-weight: bold;
+    color: #2f3542;
+    margin-top: 50px;
+    margin-bottom: 15px;
+}
+
+.skills-container p{
+    line-height: 25px;
+    color: #2C3A47; 
+}
+
+
+/*======== 
+   FOOTER
+=========*/
+
+#Footer{
+
+    padding: 50px 0px;
+    background-color: #6D214F;
+    margin-top: -80px;
+    height: 350px;
+    text-align: center;
+    color: #f5f6fa;
+}
+
+#Footer .texto-footer{
+
+    margin-top: 90px;
+
+}
+
+#Footer .para-footer{
+
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+}
+
+#Footer .contato{
+    margin: 0;
+    margin-left: -92px;
+    position: relative;
+    padding-bottom: 30px;
+
+
+
+}
+
+#Footer .contato-list, .contato li{
+    display: inline-block;
+}
+
+#Footer .contato-list li{
+    margin: 0 40px;
+
+}
+
+#Footer .contato .git{
+    
+    position: absolute;
+
+}
+
+#Footer .contato .twt{
+
+    position: absolute;
+
+}
+
+#Footer .contato .insta{
+
+    position: absolute;
+}
+
+#Footer .contato .git:hover{
+
+    height: 60px;
+
+} 
+
+#Footer .contato .insta:hover{
+
+    height: 60px;
+    
+} 
+
+
+#Footer .contato .twt:hover{
+    
+    height: 60px;
+    
+}
+
+
+#Footer .detail{
+
+    float: left;
+    margin-left: 20px;
+    margin-top: 35px;
+    position: absolute;
+}
+
+#Footer .name-cpy{
+
+    font-weight: bold;
+
+}
+
+#Footer .credits{
+
+    
+    margin-right: 20px;
+    margin-top: 35px;
+    text-decoration: none;
+    color: #f5f6fa;
+
+}
+
+    #Footer .name-cpy:hover{
+        color: #747d8c
+    }
+
+    #Footer .credits:hover{
+
+        color: #747d8c;
+
+    }
+
+
+/*================= 
+   RESPONSIVIDADE
+===================*/
+
+@media screen and  (min-width: 1250px) {
+
+    .banner-info span{
+
+        
+        height: 200px;
+        border-radius: 50%;
+        padding-top: 20px;
+        position: relative;
+        margin-top: 30px;;
+        margin-left: 0%; 
+    }
+    
+    .banner-info h1:before{
+        content: "";
+        display: block;
+        width: 500px;
+        height: 2px;
+        background: #f5f6fa;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 20;
+    }
+
+    .banner-info h1:after{
+        content: "";
+        display: block;
+        width: 504px;
+        height: 2px;
+        background: #f5f6fa;
+        position: absolute;
+        right: 0;
+        top: 50%;
+        margin-left: auto;
+        margin-right: auto;
+        z-index: 20;
+    }
+
+
+}
+
+/*================= 
+   TABLETS
+===================*/
+
+@media (max-width: 1137px) and (min-width: 789px) { 
+
+    .banner-info h1{
+
+
+        font-size: 2rem;
+        margin-left: -20px;
+        
+    }
+
+    .banner-info img{
+
+
+        top: 40%;
+        height: 50px;
+        margin-left: -70px;
+        border-radius: 50%;
+        margin-top: 15px;
+        
+    }
+}
+
+@media (max-width: 1143px) and (min-width: 495px) { 
+
+    .banner-info h1{
+
+
+        font-size: 1.8rem;
+        margin-left: -40px;
+        
+    }
+
+    .banner-info img{
+
+
+        top: 40%;
+        height: 200px;
+        margin-left: -30px;
+        border-radius: 50%;
+        margin-top: -10px;
+        
+    }
+}
+
+@media (max-width: 3000px) and (min-width: 618px) {
+
+
+
+    #Footer{
+
+        height: 300px;
+    }
+
+
+    #Footer .detail{
+
+
+        position: absolute;
+        margin-top: 20px;
+
+
+    }  
+
+        #Footer .name-cpy:hover{
+            color: #747d8c
+        }   
+    
+    #Footer .credits{
+
+       margin-top: 20px;
+       float: right;
+
+
+    }
+
+
+        #Footer .credits:hover{
+
+            color: #747d8c;
+
+        }
+
+
+    #Footer .contato{
+        margin-top: -40px;
+        margin-left: -92px;
+        position: relative;
+        padding-bottom: 30px; 
+    
+    }
+
+    
+    #Footer .contato-list, .contato li{
+        display: inline-block;
+
+
+    }
+    
+    #Footer .contato-list li{
+        margin: 0 40px;
+
+    
+    }
+
+
+    #Footer .contato .git{
+    
+        position: absolute;
+        height: 50px;
+    
+    }
+    
+    #Footer .contato .twt{
+    
+        position: absolute;
+        height: 50px;
+    
+    }
+    
+    #Footer .contato .insta{
+    
+        position: absolute;
+        height: 50px;
+    }
+
+
+} 
+
+
+/*================= 
+   IPHONE ADAP.
+===================*/
+
+@media (max-width: 378px) and (min-width: 270px) {
+
+    /*================= 
+    BANNER IPHONE
+    ===================*/
+
+    .banner-info img{
+
+
+        top: 40%;
+        height: 100px;
+        margin-left: -10px;
+        border-radius: 50%;
+        
+    }
+
+
+    .banner-info h1{
+
+        position: absolute;
+        top: 20vh;
+        margin-left: -8%;
+        font-size: 1.2rem; 
+
+    }
+
+    /*================= 
+        FOOTER IPHONE
+    ===================*/
+
+    #Footer .detail{
+
+        margin-top: 40px;
+        display: block;
+        word-wrap: break-word;
+        margin-left: 2px;
+
+    }  
+
+        #Footer .name-cpy:hover{
+            color: #747d8c
+        }   
+    
+    #Footer .credits{
+
+       margin-top: 90px;
+       display: block;
+       float: left;
+       margin-left: 0px;
+       margin: 0;
+       padding: 0;
+
+    }
+
+
+        #Footer .credits:hover{
+
+            color: #747d8c;
+
+        }
+    
+
+} 
+
+
+
+/*================= 
+  GERAL MOBILE
+===================*/
+
+@media (max-width: 450px){
+
+    p, input, textarea{
+
+        font-size: 1.2rem;  
+    }
+
+
+/*================= 
+  NAVBAR  MOBILE
+===================*/
+
+    #navbar nav{
+
+        float: right;
+        margin-top: -1.5rem;
+        margin-right: 5rem;
+
+    }
+
+    .navbar-list li{
+        margin: 0 1px;
+
+    }
+
+    .navbar-list li img{
+
+        height: 40px;
+
+    }
+
+/*================= 
+  BANNER  MOBILE
+===================*/
+
+    #main-banner{
+        height: 40vh;
+        padding-top: 5vh;
+        padding-bottom: 10vh;
+    }
+
+    .banner-info img{
+
+        height: 100px;
+        border-radius: 50%;
+        
+    }
+
+
+    .banner-info h1{
+
+        position: absolute;
+        top: 20vh;
+        font-size: 1.2rem; 
+
+    }
+
+    .banner-info{
+
+       width: 60%;
+        
+    }
+
+
+/*================= 
+  ABOUT  MOBILE
+===================*/
+
+    #sobre-section h2 {
+        font-size: 1.2rem;
+ 
+
+    }
+
+    #sobre-section p{
+        font-size: 1rem;
+        padding-bottom: 2rem;
+
+    }
+    
+    #sobre-section{
+        
+        padding: 2rem;
+        height: auto;
+        padding-bottom: 50px;
+
+    }
+
+/*================= 
+  SKILLS MOBILE
+===================*/
+
+    #skills-section{
+        margin-top: -35px;
+        width: 90%;
+    }
+
+    #skills-section .container{
+
+        flex-direction: column;
+       
+    }
+
+    .primeiro{
+
+        border-right: 1px solid transparent;
+        border-bottom: 1px solid #ccc;        
+    }
+
+
+    .skills-container{
+
+        padding: 50px;
+    }
+
+
+/*================= 
+  FOOTER MOBILE
+===================*/
+
+    #Footer{
+
+        height: 425px;
+    }
+
+
+    #Footer .detail{
+
+        margin-top: 40px;
+        display: block;
+
+    }  
+
+    
+        #Footer .name-cpy:hover{
+            color: #747d8c
+        }   
+    
+    #Footer .credits{
+
+       margin-top: 80px;
+       display: block;
+       float: left;
+       margin-left: 20px;
+
+    }
+
+
+        #Footer .credits:hover{
+
+            color: #747d8c;
+
+        }
+
+}
