@@ -1,2 +1,2 @@
 # Meu_Portifolio
-Site desenvolvido para divulgação de conhecimentos
+Site desenvolvido para divulgação dos meus conhecimentos
