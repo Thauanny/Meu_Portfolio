@@ -132,23 +132,32 @@ h2{
    
 }
 
+.banner-info h1{
+
+	margin-right: auto;
+	margin-left: 50px;
+	text-align: center;
+
+}
+
 .banner-info span{
 
-    text-align: center;
+    display:block;
     padding-top: 20px;
-    position: relative;
+ 
     margin-top: 30px;
+    font-size: 1.8rem;
 
 }
 
 .banner-info img{
 
-    height:300px;
-    border-radius: 50%;
-    margin-top: -50px;
+    height:200px;
+    margin-top: -130px;
     position: absolute;
-    top: 37%;
-    left: 41%;
+ 	margin-left:-86px;
+ 	margin-right: auto;
+
 }
 
 
@@ -322,9 +331,7 @@ h2{
 
 #Footer .detail{
 
-    float: left;
     margin-left: 20px;
-    margin-top: 35px;
     position: absolute;
 }
 
@@ -335,6 +342,17 @@ h2{
 }
 
 #Footer .credits{
+
+    
+    margin-right: 20px;
+    text-decoration: none;
+    color: #f5f6fa;
+
+}
+
+   
+
+#Footer .my_icon{
 
     
     margin-right: 20px;
@@ -354,28 +372,31 @@ h2{
 
     }
 
+    #Footer .my_icon:hover{
 
-/*================= 
-   RESPONSIVIDADE
-===================*/
+        color: #747d8c;
 
-@media screen and  (min-width: 1250px) {
+    }
+
+
+
+/*=======================
+   RESPONSIVIDADE BANNER
+=========================*/
+
+@media(min-width: 1269px) {
 
     .banner-info span{
-
-        
+ 
         height: 200px;
-        border-radius: 50%;
-        padding-top: 20px;
         position: relative;
-        margin-top: 30px;;
-        margin-left: 0%; 
+    
     }
     
     .banner-info h1:before{
         content: "";
         display: block;
-        width: 500px;
+        width: 525px;
         height: 2px;
         background: #f5f6fa;
         position: absolute;
@@ -389,7 +410,7 @@ h2{
     .banner-info h1:after{
         content: "";
         display: block;
-        width: 504px;
+        width: 500px;
         height: 2px;
         background: #f5f6fa;
         position: absolute;
@@ -399,61 +420,77 @@ h2{
         margin-right: auto;
         z-index: 20;
     }
-
-
 }
 
 /*================= 
    TABLETS
 ===================*/
 
-@media (max-width: 1137px) and (min-width: 789px) { 
-
-    .banner-info h1{
+@media (max-width: 1268px) and (min-width: 706px) { 
 
 
-        font-size: 2rem;
-        margin-left: -20px;
-        
-    }
+	#main-banner{
+
+		height: 70vh;
+
+	}
+
+	.banner-info span{
+
+	    margin-top: -20px;
+	    font-size: 2rem;
+	    display: inline;
+	   	position: absolute;
+	   	margin-right: auto;
+	   	margin-left: -220px;
+	}
+
 
     .banner-info img{
 
+    	height: 200px;
+    	margin-top:120px;
+   	 	position: absolute;
+ 		margin-left:-100px;
+ 		margin-right: auto;
 
-        top: 40%;
-        height: 50px;
-        margin-left: -70px;
-        border-radius: 50%;
-        margin-top: 15px;
         
     }
 }
 
-@media (max-width: 1143px) and (min-width: 495px) { 
-
-    .banner-info h1{
+@media (max-width: 705px) and (min-width: 511px) { 
 
 
-        font-size: 1.8rem;
-        margin-left: -40px;
-        
-    }
+	.banner-info span{
+
+	    margin-top: -10px;
+	    font-size: 1.6rem;
+	    display: inline;
+	   	position: absolute;
+	   	margin-right: auto;
+	   	margin-left: -190px;
+	}
+
 
     .banner-info img{
 
+    	height: 200px;
+    	margin-top:130px;
+   	 	position: absolute;
+ 		margin-left:-100px;
+ 		margin-right: auto;
 
-        top: 40%;
-        height: 200px;
-        margin-left: -30px;
-        border-radius: 50%;
-        margin-top: -10px;
         
     }
 }
 
-@media (max-width: 3000px) and (min-width: 618px) {
+/*===========================================
+	MAX WIDTH 3000 AND MIN WIDTH 695  FOOTER
+=============================================
+*/
 
 
+@media (max-width: 3000px) and (min-width: 695px) {
 
     #Footer{
 
@@ -469,10 +506,7 @@ h2{
 
 
     }  
-
-        #Footer .name-cpy:hover{
-            color: #747d8c
-        }   
+ 
     
     #Footer .credits{
 
@@ -482,12 +516,13 @@ h2{
 
     }
 
+    #Footer .my_icon{
 
-        #Footer .credits:hover{
+       margin-top: 20px;
+       float: right;
 
-            color: #747d8c;
 
-        }
+    }
 
 
     #Footer .contato{
@@ -536,81 +571,61 @@ h2{
 } 
 
 
-/*================= 
-   IPHONE ADAP.
-===================*/
+/*========================================
+	MAX WIDTH 694 AND MIN WIDTH 511 FOOTER
+===========================================
+*/
 
-@media (max-width: 378px) and (min-width: 270px) {
-
-    /*================= 
-    BANNER IPHONE
-    ===================*/
-
-    .banner-info img{
+@media (max-width: 694px) and (min-width: 511px) {
 
 
-        top: 40%;
-        height: 100px;
-        margin-left: -10px;
-        border-radius: 50%;
+	#Footer{
+
+		height: 550px;
+	}
+	
+    #Footer .my_icon{
+
         
-    }
-
-
-    .banner-info h1{
-
+        margin-top: 2%;
+        display: block;
         position: absolute;
-        top: 20vh;
-        margin-left: -8%;
-        font-size: 1.2rem; 
+        margin-left: 43%;
+
+     
 
     }
 
-    /*================= 
-        FOOTER IPHONE
-    ===================*/
+    #Footer .credits{
+     
+        margin-top: 25%;
+        position: relative;
+        display: inline-block;
+        padding-bottom: 20px;
+
+
+}
 
     #Footer .detail{
 
-        margin-top: 40px;
-        display: block;
-        word-wrap: break-word;
-        margin-left: 2px;
-
-    }  
-
-        #Footer .name-cpy:hover{
-            color: #747d8c
-        }   
     
-    #Footer .credits{
-
-       margin-top: 90px;
-       display: block;
-       float: left;
-       margin-left: 0px;
-       margin: 0;
-       padding: 0;
+        margin-top: 15%;
+        position: absolute;
+        display: block;
+        margin-left: 23%;
 
     }
 
 
-        #Footer .credits:hover{
-
-            color: #747d8c;
-
-        }
-    
-
-} 
 
 
+}
 
-/*================= 
-  GERAL MOBILE
+/*==================== 
+ 	MAX WIDTH  510
 ===================*/
 
-@media (max-width: 450px){
+@media(max-width: 510px){
 
     p, input, textarea{
 
@@ -645,34 +660,28 @@ h2{
   BANNER  MOBILE
 ===================*/
 
-    #main-banner{
-        height: 40vh;
-        padding-top: 5vh;
-        padding-bottom: 10vh;
-    }
+  
+	.banner-info span{
+
+	    margin-top: -10px;
+	    font-size: 1.5rem;
+	    display: inline;
+	   	position: absolute;
+	   	margin-right: auto;
+	   	margin-left: -175px;
+	}
+
 
     .banner-info img{
 
-        height: 100px;
-        border-radius: 50%;
+    	height: 180px;
+    	margin-top:130px;
+   	 	position: absolute;
+ 		margin-left:-90px;
+ 		margin-right: auto;
+
         
     }
-
-
-    .banner-info h1{
-
-        position: absolute;
-        top: 20vh;
-        font-size: 1.2rem; 
-
-    }
-
-    .banner-info{
-
-       width: 60%;
-        
-    }
-
 
 /*================= 
   ABOUT  MOBILE
@@ -725,43 +734,187 @@ h2{
         padding: 50px;
     }
 
-
 /*================= 
   FOOTER MOBILE
 ===================*/
 
     #Footer{
 
-        height: 425px;
+        height:600px;
     }
+
+    #Footer .contato-list, .contato li{
+    	display: inline-block;
+    	margin-bottom: 50px;
+	}
+
+
+}
+
+
+/*=========================================
+	MAX WIDTH 510 AND MIN WIDTH 379 FOOTER
+===========================================
+*/
+
+@media (min-width: 379px) and (max-width: 510px){
+
+
+  #main-banner{
+
+		height: 55vh;
+
+	}
+
+	.banner-info span{
+
+	    margin-top: -10px;
+	    font-size: 1.5rem;
+	    display: inline;
+	   	position: absolute;
+	   	margin-right: auto;
+	   	margin-left: -175px;
+	}
+
+
+    .banner-info img{
+
+    	height: 180px;
+    	margin-top:130px;
+   	 	position: absolute;
+ 		margin-left:-90px;
+ 		margin-right: auto;
+
+        
+    }
+
+
+    #Footer .my_icon{
+
+        
+     	margin-top: -23%;
+        display: block;
+        position: absolute;
+        padding-top: 20px;
+        margin-left: 42%;
+        font-size: 1.2rem;
+
+     
+
+    }
+
+    #Footer .credits {
+     
+        margin-top: 20%;
+        padding-top: 20px;
+        position: relative;
+        display: inline-block;
+		margin-left: 5%;
+
+	}
 
 
     #Footer .detail{
 
-        margin-top: 40px;
+    	margin-top: 35%;
+        position: absolute;
+        padding-top: 20px;
         display: block;
+        margin-left: 5%; 
 
-    }  
+    }
+}
 
-    
-        #Footer .name-cpy:hover{
-            color: #747d8c
-        }   
-    
-    #Footer .credits{
+/*==========================
+	MAX WIDTH 378	FOOTER
+============================
+*/
 
-       margin-top: 80px;
-       display: block;
-       float: left;
-       margin-left: 20px;
+@media (max-width: 378px){
+
+
+	#Footer{
+
+		height: 700px;
+	}
+
+
+
+    #Footer .my_icon{
+
+        
+     	margin-top: 5%;
+        display: block;
+        position: absolute;
+        padding-top: 20px;
+        margin-left: 39%;
+        font-size: 1.2rem;
+
+     
 
     }
 
-
-        #Footer .credits:hover{
-
-            color: #747d8c;
-
-        }
+    #Footer .credits {
+     
+        margin-top: 20%;
+        padding-top: 30px;
+        position: relative;
+        display: inline-block;
+		margin-left: 5%;
 
 }
+
+
+    #Footer .detail{
+
+    	margin-top: 35%;
+        position: absolute;
+        padding-top: 40px;
+        display: block;
+        margin-left: 5%; 
+
+    }
+
+}
+
+
+/*==========================================
+	MAX WIDTH 378 AND MIN WIDTH 270	IPHONE
+============================================
+*/
+
+
+@media (max-width: 378px) and (min-width: 270px) {
+
+    /*================= 
+    BANNER IPHONE
+    ===================*/
+
+  #main-banner{
+
+		height: 43vh;
+
+	}
+
+	.banner-info span{
+
+	    margin-top: -30px;
+	    font-size: 1.3rem;
+	   	margin-right: auto;
+	   	margin-left: -150px;
+	}
+
+
+    .banner-info img{
+
+    	height: 150px;
+    	margin-top:80px;
+   	 	position: absolute;
+ 		margin-left:-73px;
+ 		margin-right: auto;
+
+        
+    }
+
+} 
+
